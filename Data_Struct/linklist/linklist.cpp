@@ -2,10 +2,10 @@
 
 
 
-linklist::LinkList::LinkList() : _size(0) , root(nullptr)   {}
-int linklist::LinkList::size(){return _size;}
+Data_Struct::LinkList::LinkList() : _size(0) , root(nullptr)   {}
+int Data_Struct::LinkList::size(){return _size;}
 
-linklist::LinkList::Node* linklist::LinkList::_insert(int data, Node* head)
+Data_Struct::LinkList::Node* Data_Struct::LinkList::_insert(int data, Node* head)
 {
     if(head == nullptr)
     {
@@ -18,13 +18,13 @@ linklist::LinkList::Node* linklist::LinkList::_insert(int data, Node* head)
 }
 
 
-void linklist::LinkList::insert(int data)
+void Data_Struct::LinkList::insert(int data)
 {
     root = _insert(data,root);
     _size+=1;
 }
 
-void linklist::LinkList::show()
+void Data_Struct::LinkList::show()
 {
     Node* temp = root;
     while(temp != nullptr)

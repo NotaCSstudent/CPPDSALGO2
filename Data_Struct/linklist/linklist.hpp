@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-namespace linklist
+namespace Data_Struct
 {
 
     class LinkList
